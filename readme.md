@@ -105,15 +105,9 @@ left_eye = keypoints[1]
 right_eye = keypoints[2]
 ```
 
-Her keypoint `[x, y, güven_skoru]` şeklinde bir dizi. `y` değerini karşılaştırarak eğilme yönünü anlıyoruz:
+Her keypoint `[x, y, güven_skoru]` şeklinde bir dizi. Yani left_eye.[1] sol gözün `y` değerini veriyor. Gözler arasındaki yükseklik farkını kullanarak karakteri kontrol edin
 
-```python
-y_difference = left_eye[1] - right_eye[1]
-
-```
-tuşlar yerine y_difference değerini kullanarak karakteri kontrol etme işi sizin
-
-### Adım 4 — Kamera önizlemesini ekrana koy(opsiyonel)
+### Adım 4 — Kamera önizlemesini ekrana koy (opsiyonel)
 
 Oynarken webcam görüntüsünü köşede görmek işe yarıyor. Çizim bölümüne şunu ekliyoruz:
 
@@ -141,9 +135,8 @@ Oyun mantığı — düşmanlar, skor, çarpışma — hiçbirine dokunulmadı.
 
 ---
 
-## Ayarlar
+## Ayarları değiştirme (opsiyonel)
 
-- **`TILT_THRESHOLD`** — Büyütürseniz daha az hassas olur, küçültürseniz daha hassas
 - **`PLAYER_SPEED`** — Oyuncunun hareket hızı
 - **`ENEMY_SPEED`** — Blokların düşme hızı
 - **`SPAWN_INTERVAL`** — Küçültürseniz daha sık blok gelir
