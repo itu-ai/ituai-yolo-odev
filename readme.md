@@ -1,4 +1,4 @@
-# 🎮 YOLO
+# 🎮 ITU AI CLUB YOLO ODEVI
 
 ## Amaç
 
