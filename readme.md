@@ -87,15 +87,8 @@ camera = cv2.VideoCapture(0)
 
 ### Adım 3 — Klavye girdisini kafa eğme ile değiştir
 
-Asıl değişiklik bu. Eski 4 satırı silip yerine şunu koyuyoruz:
 
-```python
-ok, frame = camera.read()
-frame=cv2.flip(frame,1)
-results = model(frame, verbose=False)
-```
-
-İlk iki satır kameradan bir kare alıp aynalıyor (aynalama sayesinde sağa hareket ettiğinizde ekranda da sağa gidiyor). Üçüncü satır bu kareyi YOLO'ya veriyor.
+Kameradan bir kare alıp aynalıyın (aynalama sayesinde sağa hareket ettiğinizde ekranda da sağa gidiyor). Ardından bu kareyi YOLO'ya verin.
 
 YOLO'dan dönen sonuçlardan göz koordinatlarını çekiyoruz:
 
